@@ -1,26 +1,202 @@
 @import url('https://fonts.google.com/specimen/Be+Vietnam+Pro');
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Be Vietnam Pro';
     font-size: 16px;
 }
 
-/*Estilos caja 1*/
+header{
+    background-color: #fff;
+    color: #242E52;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 25px;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    margin: 3px 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li{
+    margin: 0 15px;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+/*Estilos header---Realizado por Brenda-Karol*/
+.cabeza{
+    padding: 25px 0px 25px; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center; 
+}
+
+.div-menu{
+        display: flex;
+        justify-content: center; 
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s, cursor 0.3s; /* Efecto de cambio de color y cursor */
+        width: 100%;
+}
+
+.logo{
+    flex: 0 0 auto; /* Evitando que el logo se estire */
+}
+
+.logo-sportit{
+    width: 107.68px;
+    height: 25px;
+}
+
+.cabeza-link{
+    flex: 1; /* Ocupa el espacio restante en el header */
+    display: flex;
+    justify-content: center; 
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s, cursor 0.3s; /* Efecto de cambio de color y cursor */
+}
+
+.link-menu{
+    
+    color: #242E52;
+    position: relative;
+    transition: color 0.3s, cursor 0.3s; /* Efecto de cambio de color y cursor */
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    justify-content: center; /* Centrando horizontalmente los elementos */
+    align-items: center; /* Centrando verticalmente los elementos */
+}
+
+.link-menu:hover{
+    color: gray; /* Cambiando el color al pasar el cursor */
+    cursor: pointer; /* Cambiando el cursor a una manita */
+}
+
+.general{
+    display: flex;
+    width: 100%;
+}
+
+/*botón de contacto*/
+.caja-contact-boton{
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.boton-contact{
+    width: 134px;
+    height: 44px;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 22px; /* Redondeando los bordes a la mitad de la altura */
+    color: white;
+    font-family: 'Be Vietnam';
+    font-size: 13.18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de cambio de color */
+    float:right;
+}
+
+.boton-contact:hover{
+    background-color: #b290ee; /* Cambiando el color de fondo al pasar el cursor */
+    color: rgb(181, 21, 186); /* Cambiando el color del texto al pasar el cursor */
+}
+
+
+
+
+/*Estilos caja 1-1*/
+
+.caja-1-1 {
+    display: flex;
+    width: 1090px;
+    height: 461.07px;
+    margin-left: 180px;
+    margin-top: 260px;
+    margin-bottom: 150px;
+    justify-content: center;
+}
+
+.jugador {
+    width: 540px;
+    height: 461.07px;
+}
+
+.textos {
+    margin-left: 100px;
+}
+
+.textos h1 {
+    font-weight: bold;
+    font-size: 50px;
+    width: 450px;
+    height: 228px;
+    font-family: 'Be vietnam';
+    text-align: right;
+}
+
+.textos p {
+    width: 450px;
+    height: 71px;
+    font-family: 'Be vietnam';
+    line-height: 157.1%;
+    font-size: 16.56px;
+    text-align: right;
+}
+
+.textos button {
+    width: 134px;
+    height: 44px;
+    color: white;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 60px;
+    float: right;
+}
+
 
 /*Estilos caja 2*/
 
+
 .caja-2{
-        background-color: #8B48BF;
-        color: rgb(255,255,255);
-        display: flex;
-        justify-content: center;
-        width: 1440px;
-        height: 168px;
+    background-color: #8B48BF;
+    color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: inherit;
         
 }
 
@@ -28,39 +204,36 @@ body{
     font-size: 36px;
     font-family: 'Be vietnam';
     font-weight: bold;
-    line-height: 114.6%;
-    width: 450px;
-    height: 88px;
-    padding: 40px 50px 40px 0px;
-    margin-right: 50px;
+    width: 450px;   
+    padding: 40px 0px 40px 50px;
+    margin-right: 0px;
 }
 
 .p-2{
     font-size:16px;
-    font-family: 'Be vietnam';
-    line-height: 151.1%;
-    width: 450px;
-    height: 88px;
+    font-family: 'Be vietnam';   
+    width: 450px;    
     padding: 40px 0px 40px 50px;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
+
 /*Estilos caja 3*/
+
+/*Estilos de caja 3 y 4 (divs)---Realizado por Gustavo y Brenda Karol*/
 .caja-3{
+    padding-top: 40px;
     display: flex;
-    justify-content: space-around;
-    padding: 40px 153.5px 24px 153.5px;
-
-
+    justify-content: center;
 }
 
 .caja-4{
     display: flex;
     justify-content: center;
-    padding: 24px 455px 40px 455px;
-
 }
+
 .boton-numeros{
+    display:flex;
     margin: 0px 10px 0px 50px;
     font-size: 16px;
     width: 70px;
@@ -73,6 +246,7 @@ body{
 }
 
 .parrafos-c3y4{
+    display:flex;
     color:#B3B2B7;
     font-size: 16.13px;
     text-align: justify;
@@ -82,4 +256,638 @@ body{
 
 .parrafo-donec{
     margin-left: 50px;
+}
+
+
+.caja-3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 153.5px 24px 153.5px;
+}
+
+.caja-4 {
+    display: flex;
+    justify-content: center;
+    padding: 24px 455px 40px 455px;
+}
+
+.boton-numeros {
+    margin: 0px 10px 0px 50px;
+    font-size: 16px;
+    width: 70px;
+    height: 43px;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 25px 10px 25px;
+    color: white;
+    background-color: #8B48BF;
+}
+
+.parrafos-c3y4 {
+    color: #B3B2B7;
+    font-size: 16.13px;
+    text-align: justify;
+    width: 437px;
+    height: 104px;
+}
+
+.parrafo-donec {
+    margin-left: 50px;
+}
+
+
+
+/*Estilos CAJA BEST y su responsive---Realizado por Brenda Karol*/
+.caja-best{
+    font-family: 'Be Vietnam';
+    display: flex;
+    text-align: center;
+    align-content: center;
+    color:#242E53;
+    font-size: 39.21px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+.caja-5{
+    color: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+/*Estilo de los divs de caja-5---Realizado por Brenda Karol*/
+.contenedor-jugadores{
+    display: flex; /* Alineando con flexbox los divs horizontalmente */
+    flex-direction: row;
+    width: 2056px;
+    margin: 0 auto; /* Centrando horizontalmente la página */
+    align-items: center; /* Centrando el contenido verticalmente */
+    justify-content: center; /*Centrando el grupo de 3 divs*/
+}
+
+.caja-izquierda{
+    width: 445px;
+    height: 259.48px;
+    flex-shrink: 0; /* Evitando que el div se encoja cuando el espacio es limitado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrando el contenido horizontalmente */
+    justify-content: flex-start; /* Colocando el contenido en la parte superior */
+    padding-top: 20px; /* Ajustando la separación entre la imagen y el borde superior */
+}
+
+.caja-media,
+.caja-derecha{
+    width: 445px;
+    height: 254px;
+    flex-shrink: 0; /* Evita que el div se encoja cuando el espacio es limitado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrando el contenido horizontalmente */
+    justify-content: flex-start; /* Colocando el contenido en la parte superior */
+    padding-top: 20px; /* Ajustando la separación entre la imagen y el borde superior */
+}
+
+/*Estilos de cada avatar-imagen de cada div---Realizado por Brenda Karol*/
+.avatar-sanyo,
+.avatar-lebron,
+.avatar-navarro{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Haciendo que la imagen sea circular */
+    object-fit: cover; /* Ajustando el tamaño de la imagen */
+    margin-bottom: 10px; /* Ajustando la separación entre la imagen y el contenido siguiente */
+}
+
+/*Estilos del nombre de cada jugador */
+.nombre-sanyo,
+.nombre-lebron,
+.nombre-navarro{
+    font-family: 'Be Vietnam';
+    font-weight: bold;
+    font-size: 16.07px;
+    line-height: 156.6%;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 21px; 
+}
+
+.etiam{ 
+    font-family: 'Be Vietnam';
+    font-size: 16px;
+    line-height: 156.6%;
+    text-align: center;
+    margin-top: 21px; 
+    color:#B3B2B7
+}
+
+/*Estilo del botón de la caja 5 (botón de More)---Realizado por Brenda karol*/
+.boton-para-mas,
+.caja-boton-mas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.boton-more{
+    width: 134px;
+    height: 44px;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 22px; /* Redondeando los bordes a la mitad de la altura */
+    color: white;
+    font-family: 'Be Vietnam';
+    font-size: 13.18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de cambio de color */
+    margin-bottom: 10px;
+}
+
+.boton-more:hover {
+    background-color: #b290ee; /* Cambia el color de fondo al pasar el cursor */
+    color: rgb(181, 21, 186); /* Cambia el color del texto al pasar el cursor */
+}
+
+
+/* Estilos caja 6*/
+
+.caja-6 {
+    display: flex;
+    width: 1440px;
+    height: 224px;
+    padding-left: 165px;
+    padding-right: 165px;
+    justify-content: space-around;
+    background-color: #8B48BF;
+}
+
+.textos-caja6 {
+    width: 1065px;
+    height: 96px;
+}
+
+.textos-caja6 h2 {
+    width: 393px;
+    height: 96px;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Be vietnam';
+    margin-top: 64px;
+}
+
+.caja-6 button {
+    width: 134px;
+    height: 44px;
+    color: #8B48BF;
+    background-color: white;
+    border: none;
+    border-radius: 60px;
+    margin-top: 90px;
+}
+
+.caja-7 {
+    background-color: black;
+    width: 1439px;
+    height: 247px;
+}
+
+.c7-sec1 {
+    padding-left: 165px;
+    padding-right: 165px;
+    display: flex;
+    align-content: space-around;
+}
+
+.c7-sec1 a {
+    margin: 5px;
+    border: none;
+}
+
+.img-logo {
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.footer-part2 {
+    width: 450.69px;
+    height: 141.14px;
+
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.footer-part2 ul {
+    list-style: none;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    width: 272.81px;
+    height: 48.52px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.formulario button {
+    width: 63px;
+    height: 42px;
+    color: white;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 13.18px;
+    font-family: 'Be vietnam';
+}
+
+.form {
+    width: 201px;
+    height: 44px;
+    color: #A0A0A0;
+    border: none;
+    border-radius: 50px;
+    padding-left: 10px;
+    font-size: 13.18px;
+    font-family: 'Be vietnam';
+}
+
+.plagio {
+    display: flex;
+    flex-direction: column;
+    width: 213.85;
+    height: 19.85;
+}
+
+.texto-h6 {
+    color: #8C8C94;
+    font-size: 12.5px;
+    margin-top: 120PX;
+}
+
+.iconos nav{
+    display: flex;
+}
+
+
+/* responsive para parte mobile  todas la cajas  */
+
+@media screen and (max-width: 768px) {
+
+
+
+
+    /* menu */
+    .menu-toggle {
+        display: flex;
+        
+ 
+}
+    
+.menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 100%;
+        
+}
+
+.menu.active{
+        display: flex;
+}
+
+.menu li{
+        margin: 15px 0;
+}
+
+    .caja-1-1 {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 341.53px;
+        margin-left: 40px;
+        margin-top: 500px;
+        margin-bottom: 10px;
+        padding-top: 100px;
+        align-content: space-around;
+    }
+    .jugador {
+        width: 400px;
+        height: 341.53px;
+        
+    }
+    .textos {
+        margin-top: 100px;
+        margin-left: 25px;
+        margin-right: 100px;
+    }
+    .textos h1 {
+        font-weight: bold;
+        font-size: 50px;
+        width: 400px;
+        height: 228px;
+        font-family: 'Be vietnam';
+        text-align: right;
+    }
+    .textos p {
+        width: 450px;
+        height: 71px;
+        font-family: 'Be vietnam';
+        line-height: 157.1%;
+        font-size: 16.56px;
+        text-align: right;
+    }
+    .textos button {
+        width: 134px;
+        height: 44px;
+        color: white;
+        background-color: #8B48BF;
+        border: none;
+        border-radius: 60px;
+        float: right;
+        margin-bottom: 700px;
+    }
+
+
+
+    
+/*ESTILOS CAJA 2 Y RESPONSIVE---(Realizado por Gustavo y Brenda Karol)*/
+/*Media querie caja2---Realizado por Gustavo y Brenda Karol*/
+
+
+.caja-2{
+    flex-direction: column; /* Cambia a disposición vertical en pantallas más pequeñas */
+    min-height: auto;
+    width: 100%;
+    background-color: #3CDDF3 !important;
+    color: rgb(255,255,255);
+    
+}
+
+.division1,
+.division2{
+    flex-basis: 100%; /* Ocupando el 100% del ancho en pantallas más pequeñas */
+    text-align: left;
+}
+
+
+
+
+    .caja-3,
+    .caja-4 {
+        padding: 24px 16px; /* Ajustando el espaciado en dispositivos móviles */
+        flex-direction: column;
+        display: flex;
+        align-content: center;
+        text-align: center;
+    }
+    
+    .boton-numeros {
+          margin: 10px 0; /* Espaciado vertical entre botones en dispositivos móviles */
+    }
+    
+    .parrafos-c3y4 {
+          max-width: 100%; /* Ancho máximo para ajustarse al dispositivo */
+          width: auto; /* Ajustar automáticamente el ancho */
+        }
+
+
+
+
+        .caja-best{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:39.21px;
+            font-weight:bold;
+        }
+
+
+
+/*  caja 5 */
+/*Media querie para los divs de jugadores---Realizado por Brenda Karol*/
+/* Estilos para dispositivos móviles (por ejemplo, ancho máximo de 768px) */
+/* Cambiamos la dirección de las cajas a columna */
+.contenedor-jugadores {
+    display:flex;
+    flex-direction: column;
+    width: auto; /* Ancho automático para ajustarse al contenido */
+    }
+    
+    /* Alineando el contenido al centro horizontalmente */
+    .caja-izquierda,
+    .caja-media,
+    .caja-derecha {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    }
+    
+    /* Ocultando las cajas caja-media y caja-derecha */
+    .caja-media,
+    .caja-derecha {
+    display: none !important;
+    }
+    
+    /* Estilos de caja-izquierda en dispositivos móviles */
+    .caja-izquierda {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Separación entre las cajas-izquierda */
+    }
+    
+    /* Mostramos el botón More en dispositivos móviles */
+    .caja-boton-mas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+        
+    /* Estilo del botón More en dispositivos móviles */
+    .boton-more {
+    width: 134px;
+    height: 44px;
+     /* Ancho automático para adaptarse al contenido */
+    }
+
+/* Estilos caja 6*/
+
+
+.caja-6 {
+    display: flex;
+    flex-direction: column;
+    width: 484px;
+    height: 366px;
+    padding: 40px 50px 40px 50px;
+    justify-content:center;
+    background-color: #3CDDF3;
+}
+
+.textos-caja6 {
+    width: 324px;
+    height: 192px;
+}
+
+.textos-caja6 h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Be vietnam';
+    margin-top: 40px;
+}
+
+.caja-6 button {
+    width: 134px;
+    height: 44px;
+    color: #FFFFFF;
+    background-color: #232C50;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    align-self: center;
+    margin-bottom: 40px;
+
+}
+
+/* Estilos caja 7*/
+
+.caja-7 {
+    background-color: black;
+    width: 480px;
+    height: 534.71px;
+
+}
+
+.c7-sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.c7-sec1 a {
+    
+    border: none;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.iconos nav {
+    display: flex;
+    width: 480;
+    height: 42.05;
+}
+
+.logos .logo-principal{
+   order: +1; 
+
+}
+.img-logo {
+    padding:0px ;
+    margin: 0px;
+    
+}
+.iconos{
+    flex-direction: row;
+    width: 480px;
+    height: 42px;
+    align-self: center;
+    
+}
+
+
+.footer-part2 {
+        width: 450.69px;
+        height: 141.14px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    
+}
+.listas2{
+    margin-left: 200px;
+}
+
+.footer-part2 ul {
+    list-style: none;
+}
+
+.formulario {
+    flex-direction: row;
+    width: 480px;
+    height: 68.52px;
+    justify-content:flex-start ;
+   
+    order: -2;
+}
+
+.formulario button {
+    width: 63px;
+    height: 42px;
+    color: white;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    font-size: 13.18px;
+    font-family: 'Be vietnam';
+}
+
+.form {
+    width: 308px;
+    height: 44px;
+    color: #A0A0A0;
+    border: none;
+    font-size: 13.18px;
+    font-family: 'Be vietnam';
+}
+
+.plagio {
+    display: flex;
+    flex-direction: column;
+    width: 213.85;
+    height: 19.85;
+}
+
+.texto-h6 {
+    color: #8C8C94;
+    font-size: 12.5px;
+    margin-top: 120PX;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.footer-part2{
+    order: -1;
+}
+
+
+
 }
