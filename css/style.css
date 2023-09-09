@@ -601,6 +601,7 @@ header {
     margin-left: 200px;
     margin-top: 50px;
     margin-bottom: 75px;
+    text-align: left;
 }
 
 .footer-part2 ul {
@@ -1443,7 +1444,7 @@ header {
         flex-direction: column;
         /* Cambia a disposición vertical en pantallas más pequeñas */
         min-height: auto;
-        width: 100%;
+        width: 480px;
         background-color: #3CDDF3 !important;
         color: rgb(255, 255, 255);
 
@@ -1608,7 +1609,7 @@ header {
     .caja-6 {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 480px;
         height: 366px;
         background-color: #3CDDF3;
     }
@@ -1798,8 +1799,8 @@ header {
         font-size: 12.5px;
         padding: 0px;
         margin: 0px;
-        margin-bottom: 80px;
-
+        margin-bottom: 70px;
+        margin-right: 25px;
 
     }
 
